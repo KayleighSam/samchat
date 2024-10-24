@@ -1,0 +1,29 @@
+{
+    "onlineUsers": [
+      {
+        "name": "Marie Horwitz",
+        "status": "online"
+      },
+      {
+        "name": "Alexa Chung",
+        "status": "online"
+      },
+      {
+        "name": "Danny McChain",
+        "status": "online"
+      },
+      {
+        "name": "Ashley Olsen",
+        "status": "offline"
+      }
+    ],
+    "messages": [
+      {
+        "from": "Marie Horwitz",
+        "content": "Hello, are you there?",
+        "timestamp": "12:00 PM | Aug 13",
+        "unread": 3
+      }
+    ]
+  }
+  

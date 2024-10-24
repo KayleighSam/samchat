@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM CHAT</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<body>
+    <style>
+        #chat2 .form-control {
+border-color: transparent;
+}
+
+#chat2 .form-control:focus {
+border-color: transparent;
+box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+    </style>
+    <section>
+        <div class="container py-5">
+      
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+      
+              <div class="card" id="chat2">
+                <div class="card-header d-flex justify-content-between align-items-center p-3">
+                  <h5 class="mb-0">Chat</h5>
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm" data-mdb-ripple-color="dark">Let's Chat
+                    App</button>
+                </div>
+                <div class="card-body" data-mdb-perfect-scrollbar-init style="position: relative; height: 400px">
+      
+                 <!---chart listing-->
+                    <div class="d-flex flex-row justify-content-start">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div>
+                      <p class="small p-2 ms-3 mb-1 rounded-3 bg-body-tertiary">What are yojhu doing
+                        tomorrow? Can we come up a bar?</p>
+                      <p class="small ms-3 mb-3 rounded-3 text-muted">23:58</p>
+                    </div>
+                  </div>
+                <!--todays date listing--->
+                  <div class="divider d-flex align-items-center mb-4">
+                    <p class="text-center mx-3 mb-0" style="color: #a2aab7;">Today</p>
+                  </div>
+      
+                  <!-- <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                    <div>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Hiii, I'm good.</p>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">How are you doing?</p>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Long time no see! Tomorrow
+                        office. will
+                        be free on sunday.</p>
+                      <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">00:06</p>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                  </div> -->
+      
+                </div>
+
+                <!--send-->
+                <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3"
+                style="position: sticky; bottom: 0; background-color: #007bff; z-index: 10;">
+               <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                   alt="avatar 3" style="width: 40px; height: 100%;">
+               <!-- <input type="text" class="form-control form-control-lg" id="fileInput" 
+                   placeholder="Type message" style="flex-grow: 1; margin-left: 10px;"> -->
+
+                   <input type="text" class="form-control form-control-lg" id="exampleFormControlInput2"
+                   placeholder="Type a message..." style="flex-grow: 1; margin-left: 10px;">
+               <a class="ms-1 text-white" href="#!"><i class="fas fa-paperclip"></i></a>
+
+               <i class="fas fa-smile ms-3 text-white"  style="cursor: pointer;" onclick="toggleEmojiPicker()"></i>
+               <a class="ms-3 text-white" href="#!"><i class="fas fa-paper-plane"></i></a>
+           </div>
+           
+
+
+ <!-- Emoji Picker (displayed in rows) -->
+ <div id="emojiPicker" style="display: none; margin-top: 10px; background: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px; max-width: 4250px; overflow-y: auto;">
+    <div class="emoji-row d-flex flex-wrap">
+    <!-- Use flexbox to arrange emojis in rows -->
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <!-- Smiley faces -->
+      <span onclick="insertEmoji('😀')" style="cursor: pointer;">😀</span>
+      <span onclick="insertEmoji('😁')" style="cursor: pointer;">😁</span>
+      <span onclick="insertEmoji('😂')" style="cursor: pointer;">😂</span>
+      <span onclick="insertEmoji('🤣')" style="cursor: pointer;">🤣</span>
+      <span onclick="insertEmoji('😃')" style="cursor: pointer;">😃</span>
+      <span onclick="insertEmoji('😄')" style="cursor: pointer;">😄</span>
+      <span onclick="insertEmoji('😅')" style="cursor: pointer;">😅</span>
+      <span onclick="insertEmoji('😆')" style="cursor: pointer;">😆</span>
+      <span onclick="insertEmoji('😉')" style="cursor: pointer;">😉</span>
+      <span onclick="insertEmoji('😊')" style="cursor: pointer;">😊</span>
+      <span onclick="insertEmoji('😋')" style="cursor: pointer;">😋</span>
+      <span onclick="insertEmoji('😍')" style="cursor: pointer;">😍</span>
+      <span onclick="insertEmoji('😘')" style="cursor: pointer;">😘</span>
+      <span onclick="insertEmoji('😎')" style="cursor: pointer;">😎</span>
+      <span onclick="insertEmoji('🤔')" style="cursor: pointer;">🤔</span>
+      <span onclick="insertEmoji('🤗')" style="cursor: pointer;">🤗</span>
+      <span onclick="insertEmoji('🤩')" style="cursor: pointer;">🤩</span>
+      <span onclick="insertEmoji('🥳')" style="cursor: pointer;">🥳</span>
+      <span onclick="insertEmoji('😢')" style="cursor: pointer;">😢</span>
+      <span onclick="insertEmoji('😭')" style="cursor: pointer;">😭</span>
+      <span onclick="insertEmoji('😡')" style="cursor: pointer;">😡</span>
+      <span onclick="insertEmoji('🤯')" style="cursor: pointer;">🤯</span>
+
+      <!-- Hand gestures -->
+      <span onclick="insertEmoji('👍')" style="cursor: pointer;">👍</span>
+      <span onclick="insertEmoji('👎')" style="cursor: pointer;">👎</span>
+      <span onclick="insertEmoji('👏')" style="cursor: pointer;">👏</span>
+      <span onclick="insertEmoji('🙌')" style="cursor: pointer;">🙌</span>
+      <span onclick="insertEmoji('👋')" style="cursor: pointer;">👋</span>
+      <span onclick="insertEmoji('👌')" style="cursor: pointer;">👌</span>
+      <span onclick="insertEmoji('✌️')" style="cursor: pointer;">✌️</span>
+      <span onclick="insertEmoji('🤞')" style="cursor: pointer;">🤞</span>
+      <span onclick="insertEmoji('🙏')" style="cursor: pointer;">🙏</span>
+
+      <!-- Hearts and other symbols -->
+      <span onclick="insertEmoji('❤️')" style="cursor: pointer;">❤️</span>
+      <span onclick="insertEmoji('💔')" style="cursor: pointer;">💔</span>
+      <span onclick="insertEmoji('💖')" style="cursor: pointer;">💖</span>
+      <span onclick="insertEmoji('💘')" style="cursor: pointer;">💘</span>
+      <span onclick="insertEmoji('💞')" style="cursor: pointer;">💞</span>
+      <span onclick="insertEmoji('💪')" style="cursor: pointer;">💪</span>
+      <span onclick="insertEmoji('👀')" style="cursor: pointer;">👀</span>
+      <span onclick="insertEmoji('🔥')" style="cursor: pointer;">🔥</span>
+      <span onclick="insertEmoji('🌟')" style="cursor: pointer;">🌟</span>
+      <span onclick="insertEmoji('🎉')" style="cursor: pointer;">🎉</span>
+      <span onclick="insertEmoji('🎁')" style="cursor: pointer;">🎁</span>
+      <span onclick="insertEmoji('🎈')" style="cursor: pointer;">🎈</span>
+  </div>
+  </div>
+   <!-- Send Message Icon -->
+   <a class="ms-3" href="#!" onclick="sendMessage()">
+  </a>
+</div>
+
+<script>
+// Insert selected emoji into the message input
+function insertEmoji(emoji) {
+const messageInput = document.getElementById('exampleFormControlInput2');
+messageInput.value += emoji;
+}
+// Toggle emoji picker visibility
+function toggleEmojiPicker() {
+const emojiPicker = document.getElementById('emojiPicker');
+emojiPicker.style.display = emojiPicker.style.display === 'block' ? 'none' : 'block';
+}
+
+</script>
+
+
+
+
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+</body>
+</html>
