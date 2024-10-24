@@ -178,17 +178,16 @@ background: #eee;
                    alt="avatar 3" style="width: 40px; height: 100%;">
                <!-- <input type="text" class="form-control form-control-lg" id="fileInput" 
                    placeholder="Type message" style="flex-grow: 1; margin-left: 10px;"> -->
+                
+                   <textarea type="text" class="form-control form-control-lg" id="exampleFormControlInput2"
+                   placeholder="Type a message..." style="flex-grow: 1; margin-left: 10px;overflow-x: auto;"></textarea>
 
-                   <input type="text" class="form-control form-control-lg" id="exampleFormControlInput2"
-                   placeholder="Type a message..." style="flex-grow: 1; margin-left: 10px;">
                <a class="ms-1 text-white" href="#!"><i class="fas fa-paperclip"></i></a>
 
                <i class="fas fa-smile ms-3 text-white"  style="cursor: pointer;" onclick="toggleEmojiPicker()"></i>
                <a class="ms-3 text-white" href="#!"><i class="fas fa-paper-plane"></i></a>
            </div>
            
-
-
  <!-- Emoji Picker (displayed in rows) -->
  <div id="emojiPicker" style="display: none; margin-top: 10px; background: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px; max-width: 4250px; overflow-y: auto; height: 170px;">
     <div class="emoji-row d-flex flex-wrap">
@@ -260,12 +259,7 @@ function toggleEmojiPicker() {
 const emojiPicker = document.getElementById('emojiPicker');
 emojiPicker.style.display = emojiPicker.style.display === 'block' ? 'none' : 'block';
 }
-
 </script>
-
-
-
-
               </div>
       
             </div>
