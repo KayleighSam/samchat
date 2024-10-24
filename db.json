@@ -1,29 +1,228 @@
 {
-    "onlineUsers": [
-      {
-        "name": "Marie Horwitz",
-        "status": "online"
-      },
-      {
-        "name": "Alexa Chung",
-        "status": "online"
-      },
-      {
-        "name": "Danny McChain",
-        "status": "online"
-      },
-      {
-        "name": "Ashley Olsen",
-        "status": "offline"
-      }
-    ],
-    "messages": [
-      {
-        "from": "Marie Horwitz",
-        "content": "Hello, are you there?",
-        "timestamp": "12:00 PM | Aug 13",
-        "unread": 3
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "name": "Marie Horwitz",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp",
+      "status": "online",
+      "id": "32dc"
+    },
+    {
+      "name": "Alexa Chung",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp",
+      "status": "offline",
+      "id": "98f0"
+    }
+  ],
+  "messages": [
+    {
+      "from": "Marie Horwitz",
+      "content": "What are you doing tomorrow? Can we meet up at the bar?",
+      "timestamp": "23:58",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp",
+      "id": "b89c"
+    },
+    {
+      "from": "Alexa Chung",
+      "content": "Long time no see! I'll be free on Sunday.",
+      "timestamp": "00:06",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp",
+      "id": "6398"
+    },
+    {
+      "id": "3392",
+      "from": "You",
+      "content": "dddddd",
+      "timestamp": "00:29",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "c91a",
+      "from": "You",
+      "content": "ddddd",
+      "timestamp": "00:29",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "b5ee",
+      "from": "You",
+      "content": "ddd",
+      "timestamp": "00:29",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "c24c",
+      "from": "You",
+      "content": "sssssss",
+      "timestamp": "00:29",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "ccab",
+      "from": "You",
+      "content": "sddfdfdfffff",
+      "timestamp": "00:42",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "07bc",
+      "from": "You",
+      "content": "dddvvvv",
+      "timestamp": "00:53",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "edc7",
+      "from": "You",
+      "content": "ffff",
+      "timestamp": "00:53",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "19c1",
+      "from": "You",
+      "content": "cdcdcd",
+      "timestamp": "00:53",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "4c00",
+      "from": "You",
+      "content": "dd",
+      "timestamp": "00:53",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "4cad",
+      "from": "You",
+      "content": "ssss",
+      "timestamp": "00:54",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "74de",
+      "from": "You",
+      "content": "xxxx",
+      "timestamp": "00:58",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "aa22",
+      "from": "You",
+      "content": "xxxxx",
+      "timestamp": "00:58",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "54f6",
+      "from": "You",
+      "content": "cccccccccccc",
+      "timestamp": "01:01",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "5f2a",
+      "from": "You",
+      "content": "zzz",
+      "timestamp": "01:03",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "7cb9",
+      "from": "You",
+      "content": "xxxxxxxx",
+      "timestamp": "01:04",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "524f",
+      "from": "You",
+      "content": "xxx🙏🙏🙏🙏",
+      "timestamp": "01:04",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "b00c",
+      "from": "You",
+      "content": "xxx",
+      "timestamp": "01:05",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "b0c4",
+      "from": "You",
+      "content": "xxxxx",
+      "timestamp": "01:14",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "2f08",
+      "from": "You",
+      "content": "cv",
+      "timestamp": "01:14",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "cb9a",
+      "from": "You",
+      "content": "xxads",
+      "timestamp": "01:17",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "c742",
+      "from": "You",
+      "content": "alafu",
+      "timestamp": "01:21",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "fdce",
+      "from": "You",
+      "content": "zzz",
+      "timestamp": "01:29",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "2273",
+      "from": "You",
+      "content": "a",
+      "timestamp": "01:29",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "5335",
+      "from": "You",
+      "content": "aaaaaaaaaaaaaaaaaa",
+      "timestamp": "01:30",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "c586",
+      "from": "You",
+      "content": "zzzzzz",
+      "timestamp": "01:32",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "b526",
+      "from": "You",
+      "content": "😋😋😋😋😋",
+      "timestamp": "01:36",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "5096",
+      "from": "You",
+      "content": "sss😋😋😋😋",
+      "timestamp": "01:37",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    },
+    {
+      "id": "e6f5",
+      "from": "You",
+      "content": "❤️",
+      "timestamp": "01:37",
+      "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+    }
+  ]
+}
