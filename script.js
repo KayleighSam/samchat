@@ -16,7 +16,7 @@ function insertEmoji(emoji) {
 
 
 
-  const apiUrl = 'http://localhost:3000'; // JSON server base URL
+  const apiUrl = 'https://samchat-omao.onrender.com'; // JSON server base URL
 
 document.addEventListener('DOMContentLoaded', () => {
   const chatBody = document.getElementById('chatBody');
