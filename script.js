@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const newMessage = {
       from: 'You',
       content: content,
-      timestamp: new Date('').toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       avatar: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp'
     };
 
